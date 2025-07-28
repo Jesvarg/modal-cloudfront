@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Custom styles for smooth animations */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-50;
+  }
+  
+  .modal-content {
+    @apply bg-white rounded-2xl shadow-2xl max-w-md w-full mx-2 sm:mx-4 relative max-h-[95vh] sm:max-h-[90vh] overflow-y-auto;
+  }
+  
+  /* Tamaños específicos para diferentes tipos de modal */
+  .modal-content.max-w-lg {
+    @apply max-w-xs sm:max-w-sm md:max-w-lg;
+  }
+  
+  .modal-content.max-w-4xl {
+    @apply max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:from-blue-600 hover:to-purple-700 hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-gray-200 hover:shadow-md;
+  }
+  
+  .btn-danger {
+    @apply bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:from-red-600 hover:to-pink-700 hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+}
