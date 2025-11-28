@@ -1,12 +1,12 @@
-# 🎨 Modal Reutilizable - React Component
+# Modal Reutilizable
 
 Un componente modal reutilizable construido con React, Tailwind CSS y Framer Motion.
 
 ## ✨ Características
 
-- 🔧 **Reutilizable**: Patrón de composición que permite cualquier contenido
-- 🎭 **Animaciones Suaves**: Transiciones con Framer Motion
-- 📱 **Responsivo**: Adaptable a cualquier tamaño de pantalla
+- **Reutilizable**: Patrón de composición que permite cualquier contenido
+- **Animaciones Suaves**: Transiciones con Framer Motion
+- **Responsivo**: Adaptable a cualquier tamaño de pantalla
 
 ## 🛠️ Tecnologías
 
@@ -30,13 +30,13 @@ npm run dev
 
 ## 🎯 Casos de Uso Implementados
 
-### 1. 💬 Mensaje Simple
+### 1. Mensaje Simple
 Modal para confirmaciones y alertas con diferentes tipos (éxito, error, info).
 
-### 2. 📝 Formulario de Contacto
+### 2. Formulario de Contacto
 Modal con formulario, validación en tiempo real y manejo de errores.
 
-### 3. 🖼️ Galería de Imágenes
+### 3. Galería de Imágenes
 Modal para visualizar imágenes con navegación, miniaturas y acciones sociales.
 
 
